@@ -3,7 +3,7 @@ import os
 from flask import Flask, redirect, render_template, request, url_for
 from werkzeug.utils import secure_filename
 
-ALLOWED_EXTENSIONS = {"mp4", "avi", "mov", "mkv"}
+ALLOWED_EXTENSIONS = {"mp4", "avi", "mov", "mkv", "zip", "mp3"}
 
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = "uploads"
